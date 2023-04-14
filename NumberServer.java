@@ -8,7 +8,7 @@ class Handler implements URLHandler {
 
     public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
-            return String.format("Francis's number: %d", num);
+            return String.format("Francis and Neo's number: %d", num);
         } else if (url.getPath().equals("/plus one")) {
             num += 1;
             return String.format("Number incremented!");
